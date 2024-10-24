@@ -10,10 +10,10 @@ if ("geolocation" in navigator) {
         position.coords.longitude +
         "&appid=dc8c9152e8adaad0ec8bf635818c0d42&units=metric";
 
-      let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
-      requete.open("GET", url); // Nous récupérons juste des données
-      requete.responseType = "json"; // Nous attendons du JSON
-      requete.send(); // Nous envoyons notre requête
+      let requete = new XMLHttpRequest(); // s
+      requete.open("GET", url); //
+      requete.responseType = "json"; //
+      requete.send();
 
       // Dès qu'on reçoit une réponse, cette fonction est executée
       requete.onload = function () {
@@ -62,12 +62,11 @@ function recevoirTemperature(ville) {
     ville +
     "&appid=dc8c9152e8adaad0ec8bf635818c0d42&units=metric";
 
-  let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
-  requete.open("GET", url); // Nous récupérons juste des données
-  requete.responseType = "json"; // Nous attendons du JSON
-  requete.send(); // Nous envoyons notre requête
-
-  // Dès qu'on reçoit une réponse, cette fonction est executée
+  let requete = new XMLHttpRequest(); //
+  requete.open("GET", url); //
+  requete.responseType = "json"; //
+  requete.send(); //
+  //
   requete.onload = function () {
     if (requete.readyState === XMLHttpRequest.DONE) {
       if (requete.status === 200) {

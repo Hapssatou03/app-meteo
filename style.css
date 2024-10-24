@@ -17,3 +17,7 @@ html, body {
     background: rgba(178, 223, 251, .3);
     cursor: pointer;
   }
+
+  .container{
+    margin: 19%;
+  }
